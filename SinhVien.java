@@ -45,7 +45,7 @@ public class SinhVien {
     
     public void xuat() {
         System.out.println("Mssv: "+ mssv);
-        System.out.println("Ho va ten:"+ ho + " " +ten);
+        System.out.println("Ho va ten: "+ ho + " " +ten);
         System.out.println("Gioi tinh: " + gioiTinh);
         System.out.println("Nam sinh: " + namSinh);
     }

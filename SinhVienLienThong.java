@@ -15,7 +15,8 @@ public class SinhVienLienThong extends SinhVien {
         nganhHocCu = sv.nganhHocCu;
         namTotNghiepCaoDang = sv.namTotNghiepCaoDang;
     }
-    public SinhVienLienThong(String ms, String ho, String ten, String gt, int namSinh, String n_h_c, int ntn) {
+    public SinhVienLienThong(String ms, String ho, String ten, 
+            String gt, int namSinh, String n_h_c, int ntn) {
         super(ms, ho, ten, gt, namSinh);
         nganhHocCu = n_h_c;        
         namTotNghiepCaoDang = ntn;
@@ -24,6 +25,7 @@ public class SinhVienLienThong extends SinhVien {
     @Override
     public void nhap() {
         super.nhap();
+        scan.nextLine();
         System.out.print("Nganh hoc cu: ");
         nganhHocCu = scan.nextLine();
         System.out.print("Nam tot nghiep cao dang: ");
@@ -34,7 +36,7 @@ public class SinhVienLienThong extends SinhVien {
     public void xuat() {
         super.xuat();
         System.out.println("Nganh hoc cu: " + nganhHocCu);
-        System.out.println("Nam tot nghiep cao dang:" + namTotNghiepCaoDang);
+        System.out.println("Nam tot nghiep cao dang: " + namTotNghiepCaoDang);
     }
 
     public String getNganhHocCu() {

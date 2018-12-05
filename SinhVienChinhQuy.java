@@ -14,7 +14,8 @@ public class SinhVienChinhQuy extends SinhVien {
         drl = sv.drl;
     }
     
-    public SinhVienChinhQuy(String ms, String ho, String ten, String gt, int namSinh, int drl) {
+    public SinhVienChinhQuy(String ms, String ho, 
+            String ten, String gt, int namSinh, int drl) {
         super(ms, ho, ten, gt, namSinh);
         this.drl = drl;
     }
